@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  padding: 1rem;
+}
+
+.container {
+  /* background-color: tomato; */
+}
+
+/* .flex_ {
+  background-color: tomato;
+  width: 50%;
+  margin-left: 30%;
+  display: flex;
+  justify-content: space-evenly;
+} */
