@@ -1,21 +1,29 @@
 import { createTheme } from "@mui/material";
-import { purple, red } from "@mui/material/colors";
+
 export const theme = createTheme({
   palette: {
     primary: {
-      main: purple[500],
+      main: "#1760a5",
+      light: "skyblue",
     },
-  },
-  myButton: {
-    backgroundColor: red[500],
-    color: "White",
-    border: "1px solid black",
+    secondary: {
+      main: "#15c630",
+    },
+    otherColor: {
+      main: "#999",
+    },
   },
 });
 
-// How To Use it 
-const useStyles = makeStyles((theme) => ({
-  button: {
-    ...theme.myButton
-  },
-}));
+
+// And Wrap the theme with the main JS file with ThemeProvider !
+
+import { ThemeProvider } from "@mui/material";
+import { theme } from "./theme";
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  </React.StrictMode>
+);
